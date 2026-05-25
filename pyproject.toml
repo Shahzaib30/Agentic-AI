@@ -1,9 +1,9 @@
 [project]
-name = "Agentic-AI"
+name = "agentic-ai-workflows"
 version = "0.1.0"
-description = "Add your description here"
+description = "Professional agentic AI workflows, LangGraph experiments, and a memory-persistent Streamlit chatbot."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
     "faiss-cpu>=1.13.2",
     "langchain>=1.2.15",
@@ -15,7 +15,12 @@ dependencies = [
     "langchain-openai>=1.1.12",
     "langchain-text-splitters>=1.1.1",
     "langgraph>=1.1.6",
+    "psycopg-pool>=3.2.6",
     "pypdf>=6.10.0",
     "python-dotenv>=1.2.2",
     "sentence-transformers>=5.4.0",
+    "streamlit>=1.40.0",
 ]
+
+[project.scripts]
+agentic-chatbot = "main:main"
